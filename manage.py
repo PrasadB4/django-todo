@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+#Hi
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'todoApp.settings')
