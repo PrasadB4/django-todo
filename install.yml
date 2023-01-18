@@ -1,0 +1,23 @@
+---
+  -  name: install java
+     tasks:
+     - name: "Install Java JDK 11"
+       script: jenkins.sh
+
+  -  hosts: test
+     become: true
+     name: install java
+     tasks:
+     - name: "Install Java JDK 11"
+       apt:
+         name: openjdk-11-jdk
+         state: present
+
+  -  hosts: prod
+     become: true
+     name: install java
+     tasks:
+     - name: "Install Java JDK 11"
+       apt:
+         name: openjdk-11-jdk
+         state: present
